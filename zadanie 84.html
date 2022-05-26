@@ -1,0 +1,45 @@
+
+<html>
+<head>
+    <title> zadanie 84 </title>
+    <link rel="Stylesheet" type="text/css" href="css_stylesheet.css" />
+    <link rel="shortcut icon" href="icon.ico" />
+    <script language="JavaScript">
+        function szymanski_start() {
+            start_szy = new Date();
+            poczatek_szy = start_fil.getTime();
+        }
+        function szymanski_stop() {
+            stop_szy = new Date();
+            koniec_szy = stop_fil.getTime();
+            roznica_szy = koniec_fil - poczatek_fil;
+            pokaz1.innerHTML = roznica_fil / 1000 + " s";
+        }
+    </script>
+    <style>
+        table {
+            border: 8px;
+            border-style: solid;
+            padding: 5px;
+            font-size: 40px;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script language="JavaScript">
+        dzis_fil = new Date();
+        document.write("<br>Aktualny czas : ", dzis_fil.getHours(), ":", dzis_fil.getMinutes(), "<br>");
+    </script>
+    <input type="button" name="Button1" value="START" onclick="szymanski_start()">
+    <input type="button" name="Button2" value="STOP" onclick="szymanski_stop()">
+    <center>
+        <table>
+            <tr id="pokaz1"></tr>
+        </table>
+    </center>
+    <center><button class="button" onclick="window.close()">ZAMKNIJ</button></center>
+</body>
+</html>
